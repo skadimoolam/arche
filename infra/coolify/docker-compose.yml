@@ -43,8 +43,8 @@ services:
 
   web:
     build:
-      context: ./apps/web
-      dockerfile: Containerfile
+      context: ../..
+      dockerfile: apps/web/Containerfile
     restart: unless-stopped
     environment:
       # Domain (set in Coolify UI)
